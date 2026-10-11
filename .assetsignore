@@ -1,0 +1,16 @@
+# Cloudflare serves only the web app from this repository root.
+# Never upload repository history, native Android sources, or APK artifacts.
+.git/
+.github/
+android/
+dist/
+assets/reels/
+
+# Local and project-only files.
+.DS_Store
+**/.DS_Store
+.gitignore
+.assetsignore
+README.md
+*.jks
+*.keystore

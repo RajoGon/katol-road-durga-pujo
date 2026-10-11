@@ -14,13 +14,13 @@ Then open `http://localhost:8080`.
 
 ## Free deployment
 
-Cloudflare Pages can host the project as a purely static site. Connect the repository and use:
+Cloudflare Workers Static Assets can host the project as a purely static site. Connect the repository and use:
 
-- Framework preset: `None`
 - Build command: leave empty
-- Output directory: `.`
+- Deploy command: `npx wrangler deploy --assets .`
+- Root directory: `/`
 
-No backend, database, paid map API, or video service is required. The videos in `media/` are static assets and are loaded only after a visitor presses Play.
+The root `.assetsignore` file prevents Cloudflare from uploading Git history, Android build files, source videos and the APK. Do not remove it when deploying the repository root. No backend, database, paid map API or video service is required. The optimized videos in `media/` are static assets and load only after a visitor presses Play.
 
 ## Updating a day video
 
