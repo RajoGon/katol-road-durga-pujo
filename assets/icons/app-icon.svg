@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Katol Road Durga Pujo</title>
+  <desc id="desc">A golden lotus on a deep red background</desc>
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="36%" r="76%">
+      <stop offset="0" stop-color="#a5213b"/>
+      <stop offset="1" stop-color="#4a0714"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffe8a3"/>
+      <stop offset="0.5" stop-color="#e3aa3a"/>
+      <stop offset="1" stop-color="#a9630e"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <circle cx="256" cy="256" r="181" fill="none" stroke="#efcc79" stroke-opacity=".28" stroke-width="3"/>
+  <circle cx="256" cy="256" r="159" fill="none" stroke="#efcc79" stroke-opacity=".16" stroke-width="2" stroke-dasharray="3 12"/>
+  <g fill="url(#gold)" stroke="#ffe8a3" stroke-width="4" stroke-linejoin="round">
+    <path d="M256 111c47 49 58 99 0 163-58-64-47-114 0-163Z"/>
+    <path d="M161 155c66 13 99 53 84 137-82-26-101-75-84-137Z"/>
+    <path d="M351 155c17 62-2 111-84 137-15-84 18-124 84-137Z"/>
+    <path d="M106 242c63-15 112 5 136 88-83 12-122-23-136-88Z"/>
+    <path d="M406 242c-14 65-53 100-136 88 24-83 73-103 136-88Z"/>
+    <path d="M143 342c44-38 95-41 113 28-49 39-87 30-113-28Z"/>
+    <path d="M369 342c-26 58-64 67-113 28 18-69 69-66 113-28Z"/>
+  </g>
+  <path d="M137 389c74 22 164 22 238 0" fill="none" stroke="#ffe8a3" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="256" cy="269" r="27" fill="#fff1c0" stroke="#d89b31" stroke-width="7"/>
+</svg>
