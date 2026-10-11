@@ -17,10 +17,10 @@ Then open `http://localhost:8080`.
 Cloudflare Workers Static Assets can host the project as a purely static site. Connect the repository and use:
 
 - Build command: leave empty
-- Deploy command: `npx wrangler deploy --assets .`
+- Deploy command: `npx wrangler deploy`
 - Root directory: `/`
 
-The root `.assetsignore` file prevents Cloudflare from uploading Git history, Android build files, source videos and the APK. Do not remove it when deploying the repository root. No backend, database, paid map API or video service is required. The optimized videos in `media/` are static assets and load only after a visitor presses Play.
+The included `wrangler.jsonc` supplies the Worker name, compatibility date and static asset directory. The root `.assetsignore` file prevents Cloudflare from uploading Git history, Android build files, source videos and the APK. Do not remove it when deploying the repository root. No backend, database, paid map API or video service is required. The optimized videos in `media/` are static assets and load only after a visitor presses Play.
 
 ## Updating a day video
 

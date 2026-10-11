@@ -11,6 +11,7 @@ assets/reels/
 **/.DS_Store
 .gitignore
 .assetsignore
+wrangler.jsonc
 README.md
 *.jks
 *.keystore
