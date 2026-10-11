@@ -14,7 +14,12 @@ const festivalDays = [
         detail: "Grand procession welcoming Maa Durga",
       },
     ],
-    video: null,
+    momentTitle: "Ailo Uma Barite",
+    video: {
+      src: "media/day-chaturthi.mp4",
+      poster: "assets/thumbnails/day-chaturthi.webp",
+      duration: "22 sec",
+    },
   },
   {
     id: "panchami",
@@ -36,6 +41,8 @@ const festivalDays = [
         detail: "Cultural programme",
       },
     ],
+    momentTitle: "Maa arrives where hearts gather",
+    momentMessage: "Every song, every step and every smile becomes a welcome for Maa.",
     video: null,
   },
   {
@@ -65,6 +72,7 @@ const festivalDays = [
         detail: "Geetanjali Cultural Institute · Choreographed by Shreya Roy",
       },
     ],
+    momentTitle: "Bodhan: Maa awakens in our hearts",
     video: {
       src: "media/day-shashti.mp4",
       poster: "assets/thumbnails/day-shashti.webp",
@@ -89,6 +97,7 @@ const festivalDays = [
         detail: "Presented by Shiv Shakti Chhau Dance Academy, Purulia",
       },
     ],
+    momentTitle: "Dhak, devotion and celebration",
     video: {
       src: "media/day-saptami.mp4",
       poster: "assets/thumbnails/day-saptami.webp",
@@ -113,6 +122,7 @@ const festivalDays = [
         detail: "Two productions presented by Sangeeta · Yug-er Jaatri Production, West Bengal",
       },
     ],
+    momentTitle: "Where devotion meets the stage",
     video: {
       src: "media/day-adhik-saptami.mp4",
       poster: "assets/thumbnails/day-adhik-saptami.webp",
@@ -142,6 +152,7 @@ const festivalDays = [
         detail: "Presented by Nrityarpan · Choreographed by Madhumita Chuckerbutty",
       },
     ],
+    momentTitle: "Ya Devi Sarva Bhuteshu",
     video: {
       src: "media/day-ashtami.mp4",
       poster: "assets/thumbnails/day-ashtami.webp",
@@ -166,6 +177,7 @@ const festivalDays = [
         detail: "Live with Prasan Rao and Dhwani Muley · Music arrangement by Pawan Manwatkar and team",
       },
     ],
+    momentTitle: "Every voice becomes a prayer",
     video: {
       src: "media/day-navami.mp4",
       poster: "assets/thumbnails/day-navami.webp",
@@ -190,7 +202,12 @@ const festivalDays = [
         detail: "Procession begins from the puja venue",
       },
     ],
-    video: null,
+    momentTitle: "Aasche bochor abar hobe",
+    video: {
+      src: "media/day-dashami.mp4",
+      poster: "assets/thumbnails/day-dashami.webp",
+      duration: "21 sec",
+    },
   },
 ];
 
@@ -281,23 +298,23 @@ const renderDay = () => {
     )
     .join("");
 
-  const reel = day.video
+  const dayMoment = day.video
     ? `
       <button
-        class="day-reel media-trigger"
+        class="day-video-card media-trigger"
         type="button"
         data-video="${day.video.src}"
-        data-title="${day.name} programme reel"
+        data-title="${day.name} · Moments of devotion"
       >
-        <img src="${day.video.poster}" alt="${day.name} programme reel cover" loading="lazy" />
-        <span class="reel-label"><span aria-hidden="true">▶</span> Play day reel · ${day.video.duration}</span>
+        <img src="${day.video.poster}" alt="A moment from ${day.name} celebrations" loading="lazy" />
+        <span class="video-label"><span aria-hidden="true">▶</span> Watch the moment · ${day.video.duration}</span>
       </button>
     `
     : `
-      <div class="reel-coming">
+      <div class="day-blessing">
         <span aria-hidden="true">✦</span>
-        <strong>Day reel coming soon</strong>
-        <small>The reel can be added later without changing the schedule or the app layout.</small>
+        <strong>“${day.momentMessage}”</strong>
+        <small>May this evening bring devotion, music and togetherness.</small>
       </div>
     `;
 
@@ -313,8 +330,8 @@ const renderDay = () => {
         <ol class="agenda-list">${agenda}</ol>
       </div>
       <div class="day-media">
-        <h4>${day.video ? "Today’s reel" : "Day reel"}</h4>
-        ${reel}
+        <h4>${day.momentTitle}</h4>
+        ${dayMoment}
       </div>
     </div>
   `;
@@ -354,7 +371,7 @@ const updateTodayCard = () => {
 
   todayKicker.textContent = "Thank you, Nagpur";
   todayTitle.textContent = "What a beautiful celebration";
-  todaySummary.textContent = "Revisit the day guides and enjoy this year’s programme reels.";
+  todaySummary.textContent = "Revisit the day guides and relive this year’s moments of devotion and celebration.";
 };
 
 tabs.addEventListener("click", (event) => {
@@ -389,7 +406,7 @@ const closeMedia = () => {
 document.addEventListener("click", (event) => {
   const trigger = event.target.closest(".media-trigger");
   if (!trigger) return;
-  mediaTitle.textContent = trigger.dataset.title || "Programme reel";
+  mediaTitle.textContent = trigger.dataset.title || "Festival moments";
   mediaPlayer.src = trigger.dataset.video;
   mediaDialog.showModal();
   mediaPlayer.play().catch(() => {});
@@ -414,6 +431,11 @@ const posters = {
     src: "assets/images/cultural-event-timings.jpeg",
     title: "Cultural Extravaganza 2026",
     alt: "Official cultural programme poster for Sarbajanin Durgotsava 2026",
+  },
+  press: {
+    src: "assets/images/news-paper-clip.jpg",
+    title: "The Hitavada · 29 September 2025",
+    alt: "The Hitavada newspaper feature about Katol Road Sarbajanin Durgotsava's 65th-year celebrations",
   },
 };
 

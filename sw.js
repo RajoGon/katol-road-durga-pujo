@@ -1,15 +1,17 @@
-const CACHE_VERSION = "katol-road-pujo-v5";
+const CACHE_VERSION = "katol-road-pujo-v7";
 const OFFLINE_FILES = [
   "./",
   "./index.html",
   "./styles.css",
   "./app.js",
   "./manifest.webmanifest",
-  "./assets/icons/app-icon.svg",
+  "./assets/icons/favicon-48.png",
   "./assets/icons/app-icon-192.png",
+  "./assets/icons/apple-touch-icon.png",
   "./assets/images/welcome-image.jpeg",
   "./assets/images/pujo-timings.jpeg",
   "./assets/images/cultural-event-timings.jpeg",
+  "./assets/images/news-paper-clip.jpg",
 ];
 
 self.addEventListener("install", (event) => {

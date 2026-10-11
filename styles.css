@@ -768,7 +768,7 @@ h3 {
   border-top: 1px solid var(--line);
 }
 
-.day-reel {
+.day-video-card {
   position: relative;
   display: grid;
   min-height: 250px;
@@ -782,20 +782,20 @@ h3 {
   border-radius: 19px;
 }
 
-.day-reel img {
+.day-video-card img {
   width: 100%;
   height: 250px;
   object-fit: cover;
 }
 
-.day-reel::after {
+.day-video-card::after {
   position: absolute;
   inset: 0;
   content: "";
   background: linear-gradient(transparent 40%, rgb(35 2 8 / 86%));
 }
 
-.reel-label {
+.video-label {
   position: absolute;
   right: 16px;
   bottom: 15px;
@@ -807,7 +807,7 @@ h3 {
   font-weight: 850;
 }
 
-.reel-label span:first-child {
+.video-label span:first-child {
   display: grid;
   flex: 0 0 auto;
   width: 42px;
@@ -818,7 +818,7 @@ h3 {
   border-radius: 50%;
 }
 
-.reel-coming {
+.day-blessing {
   display: grid;
   min-height: 250px;
   padding: 28px;
@@ -831,16 +831,16 @@ h3 {
   border-radius: 19px;
 }
 
-.reel-coming span {
+.day-blessing span {
   font-size: 2rem;
 }
 
-.reel-coming strong {
+.day-blessing strong {
   margin-top: 8px;
   color: var(--maroon-900);
 }
 
-.reel-coming small {
+.day-blessing small {
   max-width: 240px;
   margin-top: 6px;
   color: var(--muted);
@@ -972,6 +972,74 @@ h3 {
   font-size: 0.72rem;
   font-weight: 850;
   background: rgb(55 5 14 / 80%);
+  border: 1px solid rgb(255 255 255 / 25%);
+  border-radius: 999px;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+.press {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.press-card {
+  display: grid;
+  gap: 22px;
+  padding: 22px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 0 0, rgb(239 204 121 / 28%), transparent 18rem),
+    #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-soft);
+}
+
+.press-copy {
+  align-self: center;
+}
+
+.press-copy h2 {
+  max-width: 22ch;
+  font-size: clamp(1.55rem, 5vw, 2.35rem);
+}
+
+.press-copy > p:not(.eyebrow) {
+  color: var(--muted);
+}
+
+.press-copy .button {
+  margin-top: 6px;
+}
+
+.press-image {
+  position: relative;
+  display: block;
+  padding: 0;
+  overflow: hidden;
+  cursor: zoom-in;
+  background: #f8f3e9;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+}
+
+.press-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.press-image span {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  padding: 7px 10px;
+  color: white;
+  font-size: 0.72rem;
+  font-weight: 850;
+  background: rgb(55 5 14 / 82%);
   border: 1px solid rgb(255 255 255 / 25%);
   border-radius: 999px;
   -webkit-backdrop-filter: blur(8px);
@@ -1343,6 +1411,12 @@ dialog::backdrop {
     grid-auto-flow: initial;
     grid-template-columns: repeat(3, 1fr);
     overflow: visible;
+  }
+
+  .press-card {
+    grid-template-columns: minmax(0, 0.9fr) minmax(340px, 1.1fr);
+    align-items: center;
+    padding: 34px;
   }
 
   .supporter-card {

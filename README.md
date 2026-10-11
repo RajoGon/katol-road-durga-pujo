@@ -22,17 +22,17 @@ Cloudflare Pages can host the project as a purely static site. Connect the repos
 
 No backend, database, paid map API, or video service is required. The videos in `media/` are static assets and are loaded only after a visitor presses Play.
 
-## Updating a day reel
+## Updating a day video
 
 1. Add the optimized MP4 to `media/`.
 2. Add a WebP cover image to `assets/thumbnails/`.
 3. Update the relevant `video` entry in `app.js` with its `src`, `poster`, and duration.
 
-The source videos in `assets/reels/` are retained locally as originals and ignored by Git. Root-level WhatsApp videos are duplicate source files and are also ignored. Only the smaller files in `media/` need to be deployed.
+Original source videos are retained locally in the ignored source-assets folder. Root-level WhatsApp videos are duplicate source files and are also ignored. Only the smaller files in `media/` need to be deployed.
 
 ## Android APK
 
-The `android/` project is a small native WebView shell. Its build automatically copies the current website, images, thumbnails and optimized MP4 files into the APK, so schedules and reels work without hosting. Maps, Instagram, WhatsApp and phone actions open in the appropriate Android app and require an internet or mobile connection.
+The `android/` project is a small native WebView shell. Its build automatically copies the current website, images, thumbnails and optimized MP4 files into the APK, so schedules and videos work without hosting. Maps, Instagram, WhatsApp and phone actions open in the appropriate Android app and require an internet or mobile connection.
 
 Requirements:
 
@@ -52,7 +52,7 @@ The output is `android/app/build/outputs/apk/debug/app-debug.apk`. Debug APKs ar
 
 ## Main content files
 
-- `app.js`: schedule, timings, reel mapping and interface behaviour
+- `app.js`: schedule, timings, video mapping and interface behaviour
 - `styles.css`: mobile-first visual system
 - `index.html`: page structure, venue, contacts and external links
 - `sw.js`: offline caching for the app shell and schedules; videos are deliberately excluded
