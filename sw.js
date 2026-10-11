@@ -1,4 +1,4 @@
-const CACHE_VERSION = "katol-road-pujo-v4";
+const CACHE_VERSION = "katol-road-pujo-v5";
 const OFFLINE_FILES = [
   "./",
   "./index.html",

@@ -3,3 +3,9 @@ assets/**/.DS_Store
 assets/reels/
 WhatsApp Video *.mp4
 dist/
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+android/*.jks
+android/*.keystore

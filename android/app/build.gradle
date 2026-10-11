@@ -1,0 +1,78 @@
+plugins {
+    id "com.android.application"
+}
+
+def webRoot = rootProject.projectDir.parentFile
+def generatedWebAssets = layout.buildDirectory.dir("generated/web-assets")
+
+tasks.register("syncWebAssets", Sync) {
+    into(generatedWebAssets.map { it.dir("www") })
+
+    from(webRoot) {
+        include "index.html"
+        include "styles.css"
+        include "app.js"
+        include "manifest.webmanifest"
+    }
+
+    from(new File(webRoot, "assets/icons")) {
+        into "assets/icons"
+        exclude "**/.DS_Store"
+    }
+
+    from(new File(webRoot, "assets/images")) {
+        into "assets/images"
+        exclude "**/.DS_Store"
+    }
+
+    from(new File(webRoot, "assets/thumbnails")) {
+        into "assets/thumbnails"
+        exclude "**/.DS_Store"
+    }
+
+    from(new File(webRoot, "media")) {
+        into "media"
+        include "*.mp4"
+    }
+}
+
+android {
+    namespace "in.org.bengaliculturalsociety.katolroadpujo"
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "in.org.bengaliculturalsociety.katolroadpujo"
+        minSdk 24
+        targetSdk 35
+        versionCode 1
+        versionName "1.0.0"
+    }
+
+    sourceSets {
+        main.assets.srcDir(generatedWebAssets)
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+        }
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    androidResources {
+        noCompress += ["mp4"]
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+tasks.named("preBuild").configure {
+    dependsOn(tasks.named("syncWebAssets"))
+}

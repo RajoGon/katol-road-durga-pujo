@@ -449,6 +449,10 @@ document.querySelector("#share-location").addEventListener("click", async () => 
   };
 
   try {
+    if (navigator.userAgent.includes("KatolRoadPujoAndroid")) {
+      window.location.href = "pujo://share-location";
+      return;
+    }
     if (navigator.share) {
       await navigator.share(shareData);
       return;
