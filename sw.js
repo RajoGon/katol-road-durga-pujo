@@ -1,13 +1,13 @@
-const CACHE_VERSION = "katol-road-pujo-v7";
+const CACHE_VERSION = "katol-road-pujo-v8";
 const OFFLINE_FILES = [
   "./",
   "./index.html",
   "./styles.css",
   "./app.js",
   "./manifest.webmanifest",
-  "./assets/icons/favicon-48.png",
-  "./assets/icons/app-icon-192.png",
-  "./assets/icons/apple-touch-icon.png",
+  "./assets/icons/bcs-favicon-48.png",
+  "./assets/icons/bcs-logo-192.png",
+  "./assets/icons/bcs-apple-touch-icon.png",
   "./assets/images/welcome-image.jpeg",
   "./assets/images/pujo-timings.jpeg",
   "./assets/images/cultural-event-timings.jpeg",

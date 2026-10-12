@@ -23,6 +23,8 @@ tasks.register("syncWebAssets", Sync) {
     from(new File(webRoot, "assets/images")) {
         into "assets/images"
         exclude "**/.DS_Store"
+        exclude "committee-members/**"
+        exclude "logo/**"
     }
 
     from(new File(webRoot, "assets/thumbnails")) {

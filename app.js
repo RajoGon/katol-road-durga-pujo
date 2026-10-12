@@ -211,8 +211,268 @@ const festivalDays = [
   },
 ];
 
+const committeeGroups = [
+  {
+    title: "Society office bearers",
+    subtitle: "Term 2023–2026",
+    sections: [
+      { role: "President", names: ["Tarit Chakraborty"] },
+      { role: "Working President", names: ["Swapan Chakraborty"] },
+      { role: "Vice President · Sports", names: ["Swapan Debnath"] },
+      { role: "Vice President · Cultural", names: ["Rabindranath Dasgupta"] },
+      { role: "Vice President · Puja", names: ["Sunil Ganguly"] },
+      { role: "Vice President · Social Service", names: ["Manik Chakraborty"] },
+      { role: "General Secretary", names: ["Salil Kumar Samanta"] },
+      { role: "Deputy General Secretary", names: ["Shyamal Chakraborty"] },
+      { role: "Treasurer", names: ["Sandeep Paul"] },
+      { role: "Internal Auditor", names: ["Tamal Maity"] },
+      { role: "Social Service Secretary", names: ["Soumyendu Sarkar"] },
+      { role: "Cultural Secretary", names: ["Deepak Chowdhury"] },
+      { role: "Sports Secretary", names: ["Sandeep Kundu"] },
+      { role: "Puja Secretary", names: ["Rudrakanta Bhattacharjee"] },
+      {
+        role: "Members",
+        names: [
+          "Pijush Kanti Das",
+          "Sudhanshu Bhadra",
+          "Bimal Roychoudhury",
+          "Dr. Amit Dutta",
+          "Sudipto Sarkar",
+          "Smt. Rinku Chakraborty",
+          "Biswajit Biswas",
+        ],
+      },
+    ],
+  },
+  {
+    title: "Guides and patrons",
+    subtitle: "Durgotsava 2024",
+    sections: [
+      { role: "Life Time Guide", names: ["Dr. Sanjay Mukherjee, IAS"] },
+      { role: "Patron in Chief", names: ["Shri Ranjan Sahai"] },
+      {
+        role: "Patrons",
+        names: [
+          "Shri Parthasarathy Roy",
+          "Shri Indrajeet Sengupta",
+          "Shri Bijon Dutta",
+          "Shri K. K. Bagadia",
+          "Shri Tarit Kumar Sarkar",
+          "Shri Rajesh Banerjee",
+          "Shri Rattan Pathak",
+          "Shri D. K. Gon",
+        ],
+      },
+      { role: "Chief Advisor", names: ["Dr. Dipankar Shome"] },
+    ],
+  },
+  {
+    title: "Executive committee",
+    subtitle: "Durgotsava 2025",
+    sections: [
+      { role: "President", names: ["Shri Vijay Ramani"] },
+      {
+        role: "Vice Presidents",
+        names: [
+          "Shri Rabindranath Dasgupta",
+          "Shri Manik Chakraborty",
+          "Shri Biswajit Chowdhury",
+          "Shri Arup Bandopadhyay",
+          "Shri Omprakash H. Hada",
+        ],
+      },
+      { role: "General Secretary", names: ["Shri Swapan Chakraborty"] },
+      { role: "Executive Secretary", names: ["Shri Salil Kr. Samanta"] },
+      { role: "Deputy General Secretary", names: ["Shri Soumyendu Sarkar"] },
+      { role: "Treasurer", names: ["Shri Sandeep Paul"] },
+      { role: "Assistant Treasurer", names: ["Shri Shyamal Chakraborty"] },
+      { role: "Auditor", names: ["Shri Tarit Chakraborty"] },
+    ],
+  },
+  {
+    title: "Reception committee",
+    subtitle: "Durgotsava 2025",
+    sections: [
+      { role: "Vice President", names: ["Shri Partho Banerjee"] },
+      { role: "Secretary", names: ["Dr. Amit Dutta"] },
+      { role: "Joint Secretary", names: ["Ku. Ankita Saha"] },
+      {
+        role: "Members",
+        names: [
+          "Shri Pradip Roy",
+          "Shri S. R. Choudhury",
+          "Shri Manish Banerjee",
+          "Smt. Mita Chakraborty",
+          "Shri Anurup Sarkar",
+          "Shri Manoj Das",
+          "Smt. Shikha Choudhury",
+          "Smt. Chhanda Samanta",
+        ],
+      },
+    ],
+  },
+  {
+    title: "Publicity teams",
+    subtitle: "Durgotsava 2025",
+    sections: [
+      { role: "Press & Publicity · Vice President", names: ["Shri Neil Banerjee"] },
+      { role: "Press & Publicity · Secretary", names: ["Shri Prasun Chakraborty"] },
+      { role: "Press & Publicity · Joint Secretary", names: ["Smt. Rinku Chakraborty"] },
+      {
+        role: "Social Media Publicity Team",
+        names: [
+          "Shubhankar Sen",
+          "Pratiksha Dey",
+          "Dipannita Bose",
+          "Soumi Bose",
+          "Shoumi Sarkar",
+          "Rajorshi Gon",
+          "Aditi Ganguly",
+        ],
+      },
+    ],
+  },
+  {
+    title: "Puja sub-committee",
+    subtitle: "Durgotsava team",
+    sections: [
+      { role: "Vice Presidents", names: ["Shri Swapan Debnath", "Shri Sunil Ganguly", "Smt. Jolly Choudhury"] },
+      { role: "Secretary", names: ["Shri Rudrakanta Bhattacharya"] },
+      {
+        role: "Joint Secretaries",
+        names: ["Shri Satadal Chatterjee", "Shri Gautam Banerjee", "Shri Chandan Banerjee (Babla)"],
+      },
+      {
+        role: "Members",
+        names: [
+          "Shri Gautam Chakraborty",
+          "Shri Saral Banerjee",
+          "Shri Sauryadeep Sarkar",
+          "Shri Dulal Ghosh",
+          "Smt. Mallika Chakraborty",
+          "Smt. Mousumi Bhadra",
+          "Smt. Archana Sarkar",
+          "Smt. Minati Roy",
+          "Smt. Arpita Banerjee",
+          "Smt. Bharati Roychoudhury",
+          "Smt. Minu Roy",
+          "Smt. Suparna Roy",
+          "Smt. Tandra Chatterjee",
+          "Smt. Ava Majumdar",
+          "Ku. Sanjukta Das",
+          "Ku. Stuti Banerjee",
+          "Smt. Sarbani Biswas",
+          "Smt. Lekha Bhattacharya",
+          "Smt. Chandana Banerjee (Tuli)",
+          "Smt. Bandana Roy Choudhury",
+          "Smt. Smita Bhattacharya",
+          "Smt. Rakhi Mukherjee",
+          "Smt. Purnima Ghosh",
+          "Smt. Jhuna Biswas",
+          "Smt. Shelly Roychoudhury",
+          "Smt. Sabita Shanti Mukherjee",
+          "Smt. Mallika Sarkar",
+          "Smt. Deboshree Chatterjee (Piyu)",
+          "Smt. Sabita Haldar",
+          "Ku. Rini Mukherjee",
+          "Ku. Aparajita Banerjee",
+          "Ku. Moumita Banerjee",
+        ],
+      },
+    ],
+  },
+  {
+    title: "Bhog sub-committee",
+    subtitle: "Durgotsava team",
+    sections: [
+      {
+        role: "Vice Presidents",
+        names: ["Shri Sushanta Mukherjee", "Shri Naren Mukherjee", "Shri Abhijit Mukherjee"],
+      },
+      { role: "Secretary", names: ["Shri Sudhangshu Bhadra"] },
+      { role: "Joint Secretaries", names: ["Shri Sandeep Kundu", "Shri Dilip Biswas"] },
+      {
+        role: "Members",
+        names: [
+          "Shri Sujit Bhattacharya",
+          "Shri Riten Choudhury",
+          "Shri Siddharth Roy",
+          "Shri Sanjit Maity",
+          "Shri D. K. Sharma",
+          "Shri Swarup Pandit",
+          "Shri Aurobindo Ghosh",
+          "Shri Chandrashekhar Bramha",
+          "Shri Kirti Bahadur Dangi",
+          "Shri Ajay Singh",
+        ],
+      },
+    ],
+  },
+  {
+    title: "Amusement team",
+    subtitle: "Durgotsava team",
+    sections: [
+      { role: "Vice President", names: ["Shri Bimal Roy Choudhury"] },
+      {
+        role: "Team",
+        names: [
+          "Shri Deepak Chowdhury",
+          "Shri Sandeep Choudhury",
+          "Shri Swapan Ganguly",
+          "Shri Sudeep Banerjee",
+          "Shri Manojit Bhattacharya",
+          "Shri Ashok Kanjilal",
+          "Shri Rajorshi Gon",
+          "Shri Subhankar Sen",
+          "Shri Manas Dey",
+        ],
+      },
+    ],
+  },
+  {
+    title: "Souvenir team",
+    subtitle: "Durgotsava team",
+    sections: [
+      { role: "Vice Presidents", names: ["Shri Tamal Maity", "Shri Sandeep Banerjee"] },
+      { role: "Convenor", names: ["Shri Biswajit Biswas"] },
+      { role: "Editors", names: ["Dr. Tapati Dey", "Smt. Mandira Ganguly"] },
+      { role: "Members", names: ["Smt. Mitali Sarkar", "Shri Sunil Yadav"] },
+    ],
+  },
+  {
+    title: "Venue and immersion teams",
+    subtitle: "Durgotsava operations",
+    sections: [
+      { role: "Pandal, Lighting & Decoration · Vice President", names: ["Shri Ranjit Mukherjee"] },
+      { role: "Pandal, Lighting & Decoration · Secretary", names: ["Shri Supriyo Sarkar"] },
+      { role: "Ground Maintenance & Security · Vice President", names: ["Shri Partho Roy"] },
+      { role: "Ground Maintenance & Security · Secretary", names: ["Shri Sudipto Sarkar"] },
+      { role: "Immersion · Vice President", names: ["Shri Sanatan S. Roy"] },
+      { role: "Immersion · Secretary", names: ["Shri Pijush Kanti Das"] },
+      {
+        role: "Immersion · Members",
+        names: ["Shri Hridoy Bhattacharya", "Shri Vijay Kumar Sharma", "Shri Ajoy Roy Choudhury", "Shri Ritesh Pandit"],
+      },
+    ],
+  },
+  {
+    title: "Rituals and production",
+    subtitle: "Durgotsava partners",
+    sections: [
+      { role: "Purohit", names: ["Shri Manik Chakraborty", "Shri Surjo Chakraborty"] },
+      { role: "Chandi Path", names: ["Shri G. K. Banerjee"] },
+      { role: "Idol Maker", names: ["Shri Ranaditta Pal (Kolkata)"] },
+      { role: "Dhaki", names: ["Shri Moloy", "Shri Laltu"] },
+      { role: "Pandal & Decoration", names: ["Sarkar Decorators"] },
+      { role: "Sound", names: ["Anil Parithar Sound Service"] },
+      { role: "Lighting", names: ["Rakesh Kanojia"] },
+    ],
+  },
+];
+
 const tabs = document.querySelector("#day-tabs");
 const panel = document.querySelector("#day-panel");
+const committeeList = document.querySelector("#committee-list");
 const todayKicker = document.querySelector("#today-kicker");
 const todayTitle = document.querySelector("#today-title");
 const todaySummary = document.querySelector("#today-summary");
@@ -257,6 +517,38 @@ const showToast = (message) => {
   toast.classList.add("is-visible");
   window.clearTimeout(showToast.timeout);
   showToast.timeout = window.setTimeout(() => toast.classList.remove("is-visible"), 2600);
+};
+
+const renderCommittee = () => {
+  if (!committeeList) return;
+  committeeList.innerHTML = committeeGroups
+    .map(
+      (group) => `
+        <article class="committee-card">
+          <header>
+            <p class="card-kicker">${group.subtitle}</p>
+            <h3>${group.title}</h3>
+          </header>
+          <dl class="committee-roles">
+            ${group.sections
+              .map(
+                (section) => `
+                  <div>
+                    <dt>${section.role}</dt>
+                    <dd>
+                      <ul>
+                        ${section.names.map((name) => `<li>${name}</li>`).join("")}
+                      </ul>
+                    </dd>
+                  </div>
+                `,
+              )
+              .join("")}
+          </dl>
+        </article>
+      `,
+    )
+    .join("");
 };
 
 const renderTabs = () => {
@@ -506,6 +798,7 @@ observedSections.forEach((section) => navObserver.observe(section));
 
 renderTabs();
 renderDay();
+renderCommittee();
 updateTodayCard();
 
 if ("serviceWorker" in navigator && window.location.protocol.startsWith("http")) {

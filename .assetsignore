@@ -5,6 +5,8 @@
 android/
 dist/
 assets/reels/
+assets/images/committee-members/
+assets/images/logo/
 
 # Local and project-only files.
 .DS_Store

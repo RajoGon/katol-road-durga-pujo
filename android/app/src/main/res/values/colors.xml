@@ -4,4 +4,5 @@
     <color name="pujo_maroon_dark">#3C0711</color>
     <color name="pujo_gold">#D89B31</color>
     <color name="pujo_cream">#FFF8E9</color>
+    <color name="pujo_icon_background">#000000</color>
 </resources>
