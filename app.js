@@ -413,18 +413,18 @@ const committeeGroups = [
     subtitle: "Durgotsava team",
     sections: [
       { role: "Vice President", names: ["Shri Bimal Roy Choudhury"] },
+      { role: "Secretary", names: ["Shri Deepak Chowdhury"] },
       {
         role: "Team",
         names: [
-          "Shri Deepak Chowdhury",
           "Shri Sandeep Choudhury",
-          "Shri Swapan Ganguly",
-          "Shri Sudeep Banerjee",
-          "Shri Manojit Bhattacharya",
-          "Shri Ashok Kanjilal",
-          "Shri Rajorshi Gon",
           "Shri Subhankar Sen",
+          "Shri Rajorshi Gon",
+          "Shri Sudeep Banerjee",
+          "Shri Ashok Kanjilal",
+          "Shri Swapan Ganguly",
           "Shri Manas Dey",
+          "Shri Manojit Bhattacharya",
         ],
       },
     ],
@@ -531,8 +531,8 @@ const renderCommittee = () => {
           </header>
           <dl class="committee-roles">
             ${group.sections
-              .map(
-                (section) => `
+          .map(
+            (section) => `
                   <div>
                     <dt>${section.role}</dt>
                     <dd>
@@ -542,8 +542,8 @@ const renderCommittee = () => {
                     </dd>
                   </div>
                 `,
-              )
-              .join("")}
+          )
+          .join("")}
           </dl>
         </article>
       `,
@@ -701,7 +701,7 @@ document.addEventListener("click", (event) => {
   mediaTitle.textContent = trigger.dataset.title || "Festival moments";
   mediaPlayer.src = trigger.dataset.video;
   mediaDialog.showModal();
-  mediaPlayer.play().catch(() => {});
+  mediaPlayer.play().catch(() => { });
 });
 
 document.querySelector(".dialog-close").addEventListener("click", closeMedia);
