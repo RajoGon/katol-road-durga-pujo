@@ -55,7 +55,7 @@ const festivalDays = [
     intro: "Maha Shashti opens the puja with worship, anjali, inauguration and an evening of music and dance.",
     events: [
       { time: "8:30 AM", title: "Maha Shashti Puja", detail: "Morning puja" },
-      { time: "10:35 AM", title: "Pushpanjali", detail: "Prasad and bhog follow anjali" },
+      { time: "10:35 AM", title: "Pushpanjali", detail: "Prasad follows anjali" },
       {
         time: "7:30 PM",
         title: "Inauguration · Bodhan, Amantran and Adhibas",
