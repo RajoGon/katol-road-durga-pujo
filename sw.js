@@ -1,4 +1,4 @@
-const CACHE_VERSION = "katol-road-pujo-v8";
+const CACHE_VERSION = "katol-road-pujo-v9";
 const OFFLINE_FILES = [
   "./",
   "./index.html",
@@ -11,7 +11,7 @@ const OFFLINE_FILES = [
   "./assets/images/welcome-image.jpeg",
   "./assets/images/pujo-timings.jpeg",
   "./assets/images/cultural-event-timings.jpeg",
-  "./assets/images/news-paper-clip.jpg",
+  "./assets/images/news-paper-clip-2026.jpeg",
 ];
 
 self.addEventListener("install", (event) => {

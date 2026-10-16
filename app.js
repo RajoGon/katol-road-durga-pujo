@@ -725,9 +725,9 @@ const posters = {
     alt: "Official cultural programme poster for Sarbajanin Durgotsava 2026",
   },
   press: {
-    src: "assets/images/news-paper-clip.jpg",
-    title: "The Hitavada · 29 September 2025",
-    alt: "The Hitavada newspaper feature about Katol Road Sarbajanin Durgotsava's 65th-year celebrations",
+    src: "assets/images/news-paper-clip-2026.jpeg",
+    title: "2026 Newspaper Feature · 66 Glorious Years",
+    alt: "2026 newspaper feature celebrating 66 years of Katol Road Sarbajanin Durgotsava",
   },
 };
 
